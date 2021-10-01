@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Desafio EBAC</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ephesis&display=swap');
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        
+        .bg-red{
+            background-color: #5D3238;
+            color: #FFF;
+        }
+
+        .bg-pink{
+            background-color: #ffd2d6;
+            color: #000;
+        }
+
+        .accordion-button.show{
+            background-color: #FFF;
+            color: #95424E;
+        }
+
+        .my-red{
+            color: #95424E;
+            font-family: 'Ephesis', cursive;
+        }
+
+        .link {
+            color: #95424E;
+            font-weight: bold;
+        }
+
+        .link:hover{
+            color: #5D3238;
+            font-size: larger;
+        }
+
+        #my-foto{
+            border-radius: 50%;
+            width: 80%;
+        }
+
+        .bordado{
+            min-height: 20rem;
+            width: 90%;
+
+        }
+
+        .tm-social{
+            width: 4rem;
+            margin: 1rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-red">
+        <a class="navbar-brand" href="#"><img class="tm-social" src="Images/DVM.png" alt="logo DVM"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#sobremim">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formacao">Formação</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mt-5">
+    <h1 id="sobremim" class="text-center my-red">Débora Videira Monteiro</h1>
+    <p class="text-justify">
+        Olá! Eu sou a moça de batom vermelho escuro da foto abaixo. Fui provocada a criar um site para mostrar minhas habilidades com frontend através de uma "land-page currículo". Aqui está o resultado final desta brincadeira.
+    </p>
+        <div class="row">
+            <div class="col-md-5 col-sm-12 align-items-center justify-content-center">
+                <img id="my-foto" src="Images/myfoto.jpg" alt="minha foto">
+                
+            </div>
+            <div class="col-md-7 col-sm-12 text-justify align-items-center">
+                <h3 class="text-center my-red">Breve Biografia</h3>
+                <p> Nasci em São Paulo em 1990 e moro aqui até hoje. Sempre fui curiosa em como as coisas funcionam, em como eram as culturas do passado, em todas as artes. Minha atividade favorita sempre foi desenhar. Durante a adolescência, vivida no auge dos Blogs, cheguei a aprender HTML buscando justamente saciar minha curiosidade de como um texto virava imagem e desenhar páginas na tela do computador.</p>
+                <p> Já na vida adulta, me formei em Arquitetura e Urbanismo na Unicamp e me pós-graduei em Edificações Sustentáveis no Senac. Você consegue ver meus trabalhos de conclusão- voltados para a escala urbana - em meu Behance logo abaixo.</p>
+                <p>Mas a vida não é simples e me decepcionei com a área de minha graduação. Após alguns anos de insistência, resolvi voltar para meu hobbie antigo e construir uma carreira a partir disso.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container col-md-8 mb-5">
+        <h2 class="text-center my-red" id="formacao">Formação</h2>
+
+        .<div class="accordion" id="ac-formacao">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="grad">
+                    <button class="accordion-button collapsed bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#arq" aria-expanded="false" aria-controls="arq">
+                        Arquitetura e Urbanismo (2007 - 2013)
+                    </button>
+                </h2>
+                <div id="arq" class="accordion-collapse collapse" aria-labelledby="lbarq" data-bs-parent="#ac-formacao">
+                    <div class="accordion-body">
+                        <p><b>Graduação em Arquitetura e Urbanismo</b> - Unicamp</p>
+                        <p><small>março de 2007 a dezembro de 2013</small></p>
+                        <p>Em minha formação foquei em Urbanismo e meu Trabalho Final de Graduação foi uma proposta de reurbanização da Vila Leopoldina a partir da estação da CPTM</p>
+                        <a class="link" href="https://www.behance.net/gallery/60905671/Trabalhos-Academicos/modules/361447047" target="_blank"> Veja o poster resumo do meu TFG 📐</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="pos">
+                    <button class="accordion-button collapsed bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#ed" aria-expanded="false" aria-controls="ed">
+                        Edificações Sustentáveis e Certificações Ambientais (2014 - 2015)
+                    </button>
+                </h2>
+                <div id="ed" class="accordion-collapse collapse" aria-labelledby="lbed" data-bs-parent="#ac-formacao">
+                    <div class="accordion-body">
+                        <p><b>Pós-Graduação em Edificações Sustentáveis</b> - Centro Universitário Senac</p>
+                        <p><small>março de 2014 a outubro de 2015</small></p>
+                        <p>Novamente foquei em Urbanismo e meu Trabalho de Conclusão de Curso foi uma proposta de Certificação Ambiental para Parques Urbanos, com estudo de caso de um parque linear em Pirituba</p>
+                        <a class="link" href="https://www.behance.net/gallery/60905671/Trabalhos-Academicos/modules/361432645" target="_blank"> Veja o poster resumo do meu TCC 🌳</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="livre">
+                    <button class="accordion-button collapsed bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#fotog" aria-expanded="false" aria-controls="fotog">
+                        Cursos Livres de Fotografia (2017)
+                    </button>
+                </h2>
+                <div id="fotog" class="accordion-collapse collapse" aria-labelledby="lbfotog" data-bs-parent="#ac-formacao">
+                    <div class="accordion-body">
+                        <p><b>Fotografia</b> - Senac - <small>2017</small></p>
+                        <p>Cursos básico e de fotografia de arquitetura nos quais aprofundei meus conhecimentos de composição, enquadramento, luz e sombra, destaques, leitura de imagens</p>
+                        <a class="link" href="https://www.behance.net/gallery/58985817/Fotografias" target="_blank">Veja meu álbum de fotografias 📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="prof">
+                    <button class="accordion-button collapsed bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#web" aria-expanded="true" aria-controls="web">
+                        WebDesign (2019)
+                    </button>
+                </h2>
+                <div id="web" class="accordion-collapse collapse" aria-labelledby="lbweb" data-bs-parent="#ac-formacao">
+                    <div class="accordion-body">
+                        <p><b>Módulo do curso de TI</b> - Senac - <small>2019</small></p>
+                        <p>Aprendi HTML5, CSS3 e noções básicas de Javascript</p>
+                        <a class="link" href="https://debvidmon.github.io/TrabalhoFinal-WebDesign-SENAC2019/" target="_blank" >Confira meu trabalho final ☀️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header  bg-red" id="tech">
+                    <button class="accordion-button bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#gen" aria-expanded="true" aria-controls="gen">
+                        Bootcamp Pessoa Desenvolvedora Java Fullstack Júnior (2021)
+                    </button>
+                </h2>
+                <div id="gen" class="accordion-collapse collapse show" aria-labelledby="lbgen" data-bs-parent="#ac-formacao">
+                    <div class="accordion-body">
+                        <p><b>Bootcamp</b> - Generation - <small>2021</small></p>
+                        <p>Lógica de Programação e Programação Orientada a Objetos</p>
+                        <p><b>Banco de Dados:</b> estrutura de dados relacionais e Structured Query Language</p>
+                        <p><b>BackEnd></b> Linguagem Java, APIs e SpringBoot</p>
+                        <p><b>FrontEnd:</b> HTML5, CSS3, Javascript, Figma, Bootstrap e Angular</p>
+                        <p><a class="link"  href="https://debvidmon.github.io/Estudando-Bootstrap/" target="_blank" >Aqui você pode conferir minha primeira página usando Bootstrap 🌸</a></p>
+                        <a class="link" href="https://raizesdela.herokuapp.com/#home" target="_blank" >Confira meu trabalho final 🌿</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="hobbies" class="container mb-5">
+        <h2 class="my-red text-center">Hobbies</h2>
+        <p>Além da fotografia que já citei acima, gosto de <a class="link" href="https://www.behance.net/gallery/99710607/Desenhos-2020" target="_blank">desenhar</a>, <a class="link"href="https://www.behance.net/gallery/62330685/Croche" target="_blank">fazer crochê</a>, bordar, ler e assistir a filmes. Também sou uma nerd descarada, gostando de todas as franquias de ficção científica e fantasia que cruzam o meu caminho. Depois da minha pós graduação em sustentabilidade virei mãe de planta, gosto de cultivar temperos frescos, frutinhas de arbusto e flores. Abaixo fotos dos bordados feitos por mim favoritos. </p>
+        <div class="row">
+            <div class="col-md-7 col-sm-12 justify-content-center align-items-center">
+                <img class="bordado" src="Images/Folhagem.jpeg" alt="Folhagem">
+            </div>
+            <div class="col-md-5 col-sm-12 justify-content-center align-items-center">
+                <img class="bordado" src="Images/abelhaflor.jpeg" alt="abelha na flor">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-pink">
+        <div class="row mb-3">
+            <div class="col md-12 d-flex justify-content-center">
+                <div>
+                    <a href="https://github.com/DebVidMon" target="_blank" class="p-3">
+                        <img class= "tm-social" src="Images/github.png" alt="logo github">
+                    </a>
+                    <a href="http://www.behance.net/deboravmonteiro" target="_blank" class="p-3">
+                        <img class= "tm-social" src="Images/behance.webp" alt="logo behance">
+                    </a>
+                    <a href="https://www.linkedin.com/in/d%C3%A9bora-videira-monteiro-90a5b347/" target="_blank" class="p-3">
+                        <img class= "tm-social" src="Images/linkedin.gif" alt="logo linkedin">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="col md-12 text-center">
+                Todos os direitos reservados: <b> Débora Videira Monteiro &copy</b>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
